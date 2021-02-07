@@ -18,7 +18,7 @@ $desktop: 1440px;
 
 @keyframes flip {
   0% {
-    transform: rotate3d(1, 0, 0, 0deg);
+    transform: rotateX(0deg);
     background: darken($Dark-desaturated-blue, 4%);
     color: $Soft-dark-red;
     box-shadow: 0 -1px 0 rgba($Grayish-blue, 0);
@@ -35,7 +35,7 @@ $desktop: 1440px;
   }
 
   100% {
-    transform: rotate3d(1, 0, 0, 180deg);
+    transform: rotateX(-180deg);
     background: darken($Dark-desaturated-blue, 2%);
     color: $Soft-red;
     box-shadow: 0 -1px 0 rgba($Grayish-blue, 0);

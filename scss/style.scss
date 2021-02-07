@@ -4,7 +4,7 @@
 main {
   height: 100vh;
   background: $Very-dark-blue
-    linear-gradient(to bottom, $Very-dark-blue, #241C2B);
+    linear-gradient(to bottom, $Very-dark-blue, #241c2b);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -47,7 +47,6 @@ h1 {
 
 .block {
   position: relative;
-  overflow: hidden;
   width: clamp(4.375rem, 15vw, 9.25rem);
   height: clamp(4.125rem, 15vw, 8.75rem);
   background: $Very-dark-blackish-blue;
@@ -56,6 +55,7 @@ h1 {
   border-radius: 0.5rem;
   box-shadow: 0 clamp(0.375rem, 1vw, 0.625rem) 0 $Very-dark-blackish-blue;
   margin-bottom: clamp(1rem, 3vw, 1.625rem);
+  perspective: 25rem;
 
   &::before,
   &::after {
@@ -90,18 +90,21 @@ h1 {
     overflow: hidden;
     border-bottom: 1px solid $Very-dark-blackish-blue;
     border-radius: 0.5rem 0.5rem 0 0;
-    transform-origin: bottom center;
+    transform-origin: bottom;
+    transform-style: preserve-3d;
 
     h2 {
       text-align: center;
       margin-top: 48%;
       color: $Soft-dark-red;
       box-shadow: none !important;
+      transform-style: preserve-3d;
     }
   }
 
   &-bottom {
     height: 100%;
+    border-radius: 0.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
