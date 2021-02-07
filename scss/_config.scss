@@ -33,7 +33,7 @@ $desktop: 1440px;
   60% {
     background: lighten($Dark-desaturated-blue, 4%);
     color: lighten($Soft-dark-red, 4%);
-    box-shadow: 0 -1px 0 rgba($Grayish-blue, 0.5);
+    box-shadow: 0 -1px 0 rgba(darken($Grayish-blue, 60%), 1);
   }
 
   100% {
