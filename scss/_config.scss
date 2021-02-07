@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+
+$Grayish-blue: hsl(237, 18%, 59%);
+$Soft-red: hsl(345, 95%, 68%);
+$Soft-dark-red: #d84e72;
+$White: hsl(0, 0%, 100%);
+$Dark-desaturated-blue: hsl(236, 21%, 26%);
+$Very-dark-blue: hsl(235, 16%, 14%);
+$Very-dark-blackish-blue: hsl(234, 17%, 12%);
+
+$desktop: 1440px;
+
+@mixin desktop {
+  @media screen and(min-width:$desktop) {
+    @content;
+  }
+}
+
+@keyframes flip {
+  0% {
+    transform: rotate3d(1, 0, 0, 0deg);
+    background: darken($Dark-desaturated-blue, 4%);
+    color: $Soft-dark-red;
+    box-shadow: 0 -1px 0 rgba($Grayish-blue, 0);
+  }
+
+  40% {
+    background: darken($Dark-desaturated-blue, 10%);
+    box-shadow: 0 -1px 0 rgba($Grayish-blue, 0.5);
+  }
+
+  60% {
+    background: darken($Dark-desaturated-blue, 10%);
+    box-shadow: 0 -1px 0 rgba($Grayish-blue, 0.5);
+  }
+
+  100% {
+    transform: rotate3d(1, 0, 0, 180deg);
+    background: darken($Dark-desaturated-blue, 2%);
+    color: $Soft-red;
+    box-shadow: 0 -1px 0 rgba($Grayish-blue, 0);
+  }
+}
