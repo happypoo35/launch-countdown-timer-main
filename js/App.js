@@ -89,4 +89,4 @@ const animation = setTimeout(() => {
       day.firstElementChild.classList.add("active");
     }
   }, 1000);
-}, 750);
+}, 500);
