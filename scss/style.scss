@@ -3,8 +3,8 @@
 
 main {
   height: 100vh;
-  background: no-repeat url("../images/bg-stars.svg"),
-    linear-gradient(to bottom, $Very-dark-blue, #211b29);
+  background: $Very-dark-blue
+    linear-gradient(to bottom, $Very-dark-blue, #241C2B);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,8 @@ main {
     top: 0;
     width: 100%;
     height: 100%;
-    background: no-repeat bottom right url("../images/pattern-hills.svg");
+    background: no-repeat bottom right url("../images/pattern-hills.svg"),
+      no-repeat url("../images/bg-stars.svg");
     z-index: -1;
 
     @include desktop {
