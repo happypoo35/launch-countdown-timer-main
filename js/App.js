@@ -3,7 +3,7 @@ const hour = document.getElementById("cHr");
 const minute = document.getElementById("cMin");
 const second = document.getElementById("cSec");
 
-const countDownDate = new Date("Feb 21, 2021").getTime();
+const countDownDate = new Date("Feb 22, 2021").getTime();
 
 const dayCount = document.querySelectorAll(".day");
 const hrCount = document.querySelectorAll(".hr");
