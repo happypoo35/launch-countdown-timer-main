@@ -5,10 +5,10 @@ const second = document.getElementById("cSec");
 
 const countDownDate = new Date("Feb 21, 2021").getTime();
 
-const dayCount = document.querySelectorAll("#day");
-const hrCount = document.querySelectorAll("#hr");
-const minCount = document.querySelectorAll("#min");
-const secCount = document.querySelectorAll("#sec");
+const dayCount = document.querySelectorAll(".day");
+const hrCount = document.querySelectorAll(".hr");
+const minCount = document.querySelectorAll(".min");
+const secCount = document.querySelectorAll(".sec");
 
 const countDown = setInterval(() => {
   const now = new Date().getTime();
