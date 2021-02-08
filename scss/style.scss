@@ -101,11 +101,8 @@ h1 {
       text-align: center;
       margin-top: 48%;
       color: $Soft-dark-red;
+      box-shadow: unset !important;
       transform-style: preserve-3d;
-
-      &.active {
-        box-shadow: unset !important;
-      }
     }
   }
 
