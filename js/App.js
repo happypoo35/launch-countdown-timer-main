@@ -3,6 +3,11 @@ const hour = document.getElementById("cHr");
 const minute = document.getElementById("cMin");
 const second = document.getElementById("cSec");
 
+let elem = document.querySelectorAll("h2");
+elem.forEach((el) => {
+  el.style.setProperty("box-shadow", "unset", "important");
+});
+
 const countDownDate = new Date("Feb 22, 2021").getTime();
 
 const dayCount = document.querySelectorAll(".day");
