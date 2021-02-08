@@ -2,7 +2,7 @@
 @import "global";
 
 main {
-  height: 100vh;
+  min-height: 100vh;
   background: $Very-dark-blue
     linear-gradient(to bottom, $Very-dark-blue, #241c2b);
   position: relative;
@@ -36,7 +36,7 @@ h1 {
 .time {
   flex: 1;
   display: flex;
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
 
   &-item {
     display: flex;

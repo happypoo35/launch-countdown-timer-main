@@ -2,6 +2,16 @@ const day = document.getElementById("cDay");
 const hour = document.getElementById("cHr");
 const minute = document.getElementById("cMin");
 const second = document.getElementById("cSec");
+const allTimers = [
+  second,
+  second.firstElementChild,
+  minute,
+  minute.firstElementChild,
+  hour,
+  hour.firstElementChild,
+  day,
+  day.firstElementChild,
+];
 
 const countDownDate = new Date("Feb 22, 2021").getTime();
 
@@ -54,17 +64,9 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const animation = setTimeout(() => {
     setInterval(() => {
-      second.classList.remove("active");
-      second.firstElementChild.classList.remove("active");
-
-      minute.classList.remove("active");
-      minute.firstElementChild.classList.remove("active");
-
-      hour.classList.remove("active");
-      hour.firstElementChild.classList.remove("active");
-
-      day.classList.remove("active");
-      day.firstElementChild.classList.remove("active");
+      allTimers.map((el) => {
+        el.classList.remove("active");
+      });
 
       if (secCount[0].innerText) {
         second.classList.add("active");
