@@ -53,12 +53,11 @@ window.addEventListener("DOMContentLoaded", () => {
   }, 1000);
 
   const animation = setTimeout(() => {
+    let elem = document.querySelectorAll("h2");
+    elem.forEach((el) => {
+      el.style.setProperty("box-shadow", "unset", "important");
+    });
     setInterval(() => {
-      let elem = document.querySelectorAll("h2");
-      elem.forEach((el) => {
-        el.style.setProperty("box-shadow", "unset", "important");
-      });
-      
       second.classList.remove("active");
       second.firstElementChild.classList.remove("active");
 
