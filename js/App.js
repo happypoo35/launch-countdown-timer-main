@@ -54,11 +54,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const animation = setTimeout(() => {
     setInterval(() => {
-      second.firstElementChild.style.boxShadow = 'unset';
-      minute.firstElementChild.style.boxShadow = 'unset';
-      hour.firstElementChild.style.boxShadow = 'unset';
-      day.firstElementChild.style.boxShadow = 'unset';
-
       second.classList.remove("active");
       second.firstElementChild.classList.remove("active");
 
